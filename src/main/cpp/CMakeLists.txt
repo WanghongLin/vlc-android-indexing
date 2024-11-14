@@ -70,6 +70,18 @@ file(GLOB_RECURSE MODULE_SRCS
         "../../../../vlc/contrib/contrib-android-aarch64-linux-android/libdvbpsi/src/descriptors/*.c"
         "../../../../vlc/contrib/contrib-android-aarch64-linux-android/libdvbpsi/src/tables/*.h"
         "../../../../vlc/contrib/contrib-android-aarch64-linux-android/libdvbpsi/src/tables/*.c"
+        "../../../../vlc/contrib/contrib-android-aarch64-linux-android/dvdnav/src/*.h"
+        "../../../../vlc/contrib/contrib-android-aarch64-linux-android/dvdnav/src/*.c"
+        "../../../../vlc/contrib/contrib-android-aarch64-linux-android/bluray/src/util/*/*.h"
+        "../../../../vlc/contrib/contrib-android-aarch64-linux-android/bluray/src/util/*/*.c"
+        "../../../../vlc/contrib/contrib-android-aarch64-linux-android/bluray/src/libbluray/*.h"
+        "../../../../vlc/contrib/contrib-android-aarch64-linux-android/bluray/src/libbluray/*.c"
+        "../../../../vlc/contrib/contrib-android-aarch64-linux-android/bluray/src/libbluray/*/*.h"
+        "../../../../vlc/contrib/contrib-android-aarch64-linux-android/bluray/src/libbluray/*/*.c"
+        "../../../../vlc/contrib/contrib-android-aarch64-linux-android/bluray/contrib/libudfread/src/*.h"
+        "../../../../vlc/contrib/contrib-android-aarch64-linux-android/bluray/contrib/libudfread/src/*.c"
+        "../../../../vlc/contrib/contrib-android-aarch64-linux-android/bluray/src/file/*.h"
+        "../../../../vlc/contrib/contrib-android-aarch64-linux-android/bluray/src/file/*.c"
         "../../../../vlc/build-android-aarch64-linux-android/*.h"
         "../../../../vlc/build-android-aarch64-linux-android/src/*.h"
         "../../../../vlc/build-android-aarch64-linux-android/ndk/*.c"
@@ -110,6 +122,8 @@ include_directories("../../../../vlc/include"
         "../../../../vlc/contrib/contrib-android-aarch64-linux-android/gnutls/lib" # gnutls
         "../../../../vlc/contrib/contrib-android-aarch64-linux-android/freetype/include" # freetype
         "../../../../vlc/contrib/contrib-android-aarch64-linux-android/libass" # libass
+        "../../../../vlc/contrib/contrib-android-aarch64-linux-android/bluray/src" # dvd/iso/bluray
+        "../../../../vlc/contrib/contrib-android-aarch64-linux-android/bluray/contrib/libudfread/src"
 )
 
 add_library(${CMAKE_PROJECT_NAME} SHARED
